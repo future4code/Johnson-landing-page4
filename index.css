@@ -1,0 +1,7 @@
+/* Definindo padrão de fonte, tamanho para todo texto e retirando espaçamento padrão do navegador*/
+* {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+}
