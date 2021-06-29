@@ -8,11 +8,13 @@
     <!--Link para o CSS-->
     <link rel="stylesheet" type="text/css" href="index.css" />
     <!--Inserir abaixo o link para as fonts que usaremos no projeto-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
     <!--Pacote de fontes Open Sans Condensed-->
-    
 
     <title>Upfour - Conquiste seu Negócio!</title>
   </head>
@@ -20,28 +22,65 @@
   <!-- Início da LandingPage -->
   <body>
     <!--Header - cabeçalho -->
-    <header>
-      <div class="menu">
-        <div>
-          <a href="./index.html">
-            <img class="logoHeader" src="./image/logo.png" alt="logo da empresa">
-          </a>
-        </div>
-        <div class="linkHeader">
-          <a class="menuLink2" href="./cases.html">Casos de Sucesso</a>
-          <a class="menuLink3" href="./controle.html">Controle de Finanças</a>
-        </div>
-      </div>
+    <header id="header">
+      <a id="logo" href="#">up<span>four.</span></a>
+      <nav id="nav">
+        <ul id="menu">
+          <li><a class="title" href="#home">Início</a></li>
+          <li><a class="title" href="#sobre">Sobre</a></li>
+          <li><a class="title" href="#servicos">Serviços</a></li>
+          <li><a class="title" href="#depoimentos">Depoimentos</a></li>
+          <li><a class="title" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!--Corpo do site-->
-    <main></main>
+    <main id="main">
+      <section id="home">
+        <h2>Home</h2>
+      </section>
 
-    <!--Footer - rodapé-->
-    <footer>
-      <div>
-        <div> <p> &copy; 2021, João Ferrão, Gabriel Azevedo, Luís Alves</p></div>
-      </div>
-    </footer>
+      <section id="sobre">
+        <h2>Sobre nós</h2>
+      </section>
+
+      <section id="servicos">
+        <h2>Serviços</h2>
+      </section>
+
+      <section id="depoimentos">
+        <h2>Depoimentos</h2>
+      </section>
+
+      <section id="contato">
+        <h2>Contato</h2>
+      </section>
+      <!--Footer - rodapé-->
+      <footer>
+        <div>
+          <div>
+            <img
+              class="rede-social"
+              src="image/facebook.png"
+              alt="logo facebook"
+            />
+            <img
+              class="rede-social"
+              src="image/instagram.png"
+              alt="logo instagram"
+            />
+            <img
+              class="rede-social"
+              src="image/whatsaap.png"
+              alt="logo whatsaap"
+            />
+            <img class="rede-social" src="image/twiter.png" alt="logo twiter" />
+
+            <p>&copy; 2021, João Ferrão, Gabriel Azevedo, Luís Alves</p>
+          </div>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
