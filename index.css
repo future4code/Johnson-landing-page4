@@ -1,9 +1,21 @@
 /* Definindo padrão de fonte, tamanho para todo texto e retirando espaçamento padrão do navegador*/
 * {
-  font-family: 'Poppins' sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+/* @media (min-width: 1200px) { */
+
+/*para mostrar a divisão entre as sections - para testes */
+.divider-1 {
+  height: 2px;
+  background: red;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -12,11 +24,8 @@ ul {
 }
 
 h2 {
+  padding-top: 10px;
   text-align: center;
-}
-
-p {
-  text-align: justify;
 }
 
 #flex-container {
@@ -33,16 +42,21 @@ p {
   align-items: center;
 
   background-color: #222226;
-  position: sticky;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
-#logo {
+.logo {
   font: 700 2.5rem 'Poppins', sans-serif;
   color: #d9c7b8;
   padding-left: 3vw;
   text-decoration: none;
 }
-#logo span {
+.logo span {
   color: #f2f2f2;
   font: 700 2.5rem 'Poppins', sans-serif;
 }
@@ -53,54 +67,91 @@ p {
 
   list-style: none;
   margin: 2rem;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
 }
 
 #menu a {
   font: 700 1rem 'Poppins', sans-serif;
   color: #f2f2f2;
   text-decoration: none;
-  padding: 1.5rem;
+  padding: 1.4rem;
   text-transform: uppercase;
 }
 
-a:hover {
+#menu a:hover {
   color: #1c1c24;
   background-color: #d9c7b8;
 }
 
-main {
-  flex-grow: 1;
-}
-
 #home {
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px;
+  margin-left: 2rem;
 }
-#fundo-home {
-  height: 50vh;
-  width: 100%;
-  position: relative;
-}
+
 #home p {
-  position: absolute;
-  top: 28vh;
   margin: 3rem;
   font-size: 1.4em;
   color: rgb(140, 140, 141);
-  width: 700px;
 }
 #logo-home {
-  position: absolute;
-  top: 15vh;
-  left: 11em;
+  width: 30vw;
 }
 
-#sobre {
-  padding: 2rem;
-  min-height: 45vh;
-  background: #f2f2f2;
-  font-size: 1.4em;
+.caixa-logo-p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  background: #222226;
 }
+
+.caixa-logo-p p {
+  display: flex;
+  text-align: end;
+}
+
+.caixa-logo-p img {
+  display: flex;
+  margin-top: 30px;
+  width: 84vw;
+  height: 20vh;
+}
+
+/* ========== seções =========== */
+
+#sobre,
+#servicos,
+#depoimentos,
+#contato {
+  padding: 3rem;
+}
+
+/* ======== sobre ========== */
+
+#sobre {
+  background: #f2f2f2;
+}
+
+.secao-sobre {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.secao-sobre p {
+  text-align: left;
+}
+
+.secao-sobre img {
+  width: 30vw;
+}
+
+/* ======= serviços ===== */
 
 #servicos {
   padding: 2rem;
@@ -115,8 +166,6 @@ main {
 
 #contato {
   display: flex;
-  padding: 2rem;
-  min-height: 25vh;
 }
 /*Estilização Formulário - Luis*/
 
