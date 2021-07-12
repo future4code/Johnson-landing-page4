@@ -8,9 +8,6 @@
 
   <!--Link para o CSS-->
   <link rel="stylesheet" type="text/css" href="index.css" />
-
-
-
   <title>Upfour - Conquiste seu Negócio!</title>
 </head>
 
@@ -18,10 +15,11 @@
 
 <body>
   <!--Header - cabeçalho -->
+ 
   <div id="flex-container">
-    <header id="header">
+    <header id="header" >
       <a class="logo" href="#">up<span>four.</span></a>
-      <nav id="nav">
+      <nav id="nav" class="responsive">
         <ul id="menu">
           <li><a class="title" href="#home">Início</a></li>
           <li><a class="title" href="#sobre">Sobre</a></li>
@@ -36,17 +34,27 @@
     <!--Primeira seção Apresentação -->
 
 
-    <main id="main">
+    <main id="main" class="responsive">
 
       <section id="home">
-        <img id="fundo-home" src="./image/img7.png">
+        <img id="fundo-home" src="./image/img6.jpg">
+        <div class="btn-home">
+          <h2>De quanto seu negócio precisa?</h2>
+          
+          <button type="submit">R$ 5.000,00 </button>
+          <button type="submit">R$ 10.000,00</button>
+          <button type="submit">R$ 15.000,00</button>
+       
+         <div class="p-home">
+            <p>*Uma análise minuciosa será realizada.</p>
+          </div>
+          </div>
         <div class="caixa-logo-p">
-          <img id="logo-home" src="./image/logo-transparente.png">
+            <img id="logo-home" src="./image/logo-transparente.png">
     
           <p>
             Com o apoio da upfour, suas finanças pessoais ou do seu negócio vão para outro patamar.
-            <br><br>
-            Confira como podemos te ajudar!
+            
           </p>
         </div>
       </section>
@@ -120,8 +128,7 @@
 
 
       <section id="depoimentos">
-        <h2>Depoimentos</h2>
-        <p>Alguns clientes de sucesso</p>
+        <h2>Depoimentos de sucesso</h2>
         <div id="container-depoimento">
           <div class="card-depoimento">
             <img class="img-depoimento" src="./image/depoimento 1.jpeg">
@@ -133,6 +140,15 @@
             <h3>Gonçalo Alves Filho, 51 anos</h3>
             <p> Gonçalo optou por uma pet shop quando decidiu abrir um negócio para complementar a aposentadoria.</p>
           </div>
+
+          <div class="card-depoimento">
+            <img class="img-depoimento" src="./image/depoimento3.png">
+            <h3>Douglas Gonçalves, 23 anos</h3>
+            <p> Douglas, com o apoio da up conseguiu realizar seu sonho de ter sua barbearia.
+              <a href="https://www.instagram.com/_douglasscortes/" target="_blank">@_douglasscortes
+              </a>
+            </p>
+          </div>
         </div>
 
 
@@ -143,11 +159,11 @@
 
       <!-- quinta seção contato -->
 
-      <h2>Contato</h2>
 
       <section id="contato">
 
         <div class="enunciado">
+         
           <h1 id="titulos">Quero saber mais...</h1>
           <p id="subtitulos">A upFour com seu serviço de Educação e Orientação Financeira, permite que você estimule
             o desenvolvimento das suas habilidades de gestão financeira,proporcionando um aumento
@@ -160,6 +176,7 @@
         </div>
 
         <form>
+          <div class="form-total">
           <div class="campo">
             <input id=form type="text" name="nome" placeholder="Nome completo" required>
           </div>
@@ -177,7 +194,8 @@
 
             <fieldset>
               <div>
-                <h5>Data de nascimento</h5><input id=form type="date" name="bdaytime" required>
+                <!-- <h5>Data de nascimento</h5> -->
+                <input id=form type="date" name="bdaytime" required>
               </div>
               <h5>Em qual serviço está interessado?</h5>
               <select id=form>
@@ -190,6 +208,7 @@
               <br>
               <button id="button" type="submit">Enviar</button>
               <br>
+            </div>
           </div>
 
 
@@ -206,6 +225,12 @@
 
 
       <footer>
+<div class="logo-footer">
+  <a href="#">
+  <img src="image/logo-transparente.png" alt="logo upfour">
+  </a>
+</div>
+
 
         <div id="container-sociais">
           <a href="http://facebook.com" target="_blank">
@@ -215,18 +240,31 @@
             <img class="rede-social" src="image/instagram.png" alt="logo instagram" />
           </a>
           <a href="http://twitter.com" target="_blank">
-            <img class="rede-social" src="image/twiter.png" alt="logo twitter" />
+            <img class="rede-social" src="image/twitter.png" alt="logo twitter" />
           </a>
           <a href="http://whatsapp.com" target="_blank">
-            <img class="rede-social" src="image/whatsaap.png" alt="logo whatsaap" />
+            <img class="rede-social" src="image/whatsapp.png" alt="logo whatsaap" />
           </a>
         </div>
         <p>Copyrigth &copy; 2021, João Ferrão, Gabriel Azevedo, Luís Alves</p>
+      <div  class="informacao-footer">
+        <div class="img-footer">
+          <img src="image/labenu.png" alt="logo labenu">
+          <img class="img-footer-2" src="image/f4bank.png" alt="logo labenu">
+        </div>
+        <p>
+          A upfour pertence ao grupo JoLuGa, CNPJ 00.000.000/0001-00, com sede na Rua Inácio Pereira da Rocha, 5100, Pinheiros, São Paulo, SP, CEP: 05432-011. A upfour. não é uma instituição financeira: somos uma correspondente bancária do Banco F4Bank (Brasil) S.A. inscrito no CNPJ sob o Nº 00.000.000/0001-02, da instituição financeira Labenu tech, inscrito no CNPJ sob o Nº 00.000.000/0001-03 com sede na R. Pais Leme, 215, Conjunto 820 Pinheiros
+          CEP 05424-150 nos termos da Resolução no 3.954, de 24 de fevereiro de 2011. O custo efetivo pode variar de 2% a.m. (26,82% a.a.) até 8,2% a.m (157,47% a.a.). Exemplo: um empréstimo de R$ 10.000,00 em 24 meses terá parcelas de R$ 618,48, um valor total de R$ 14.843,52, juros de 3,4% a.m. (49,9% a.a.) e CET de 4,2% a.m (64,4% a.a.). Prazo pagamento: de 12 meses a 36 meses. Estes valores são exemplificativos e poderão variar de acordo com os critérios de aprovação de crédito da instituição financeira. 
+        </p>
+        <img class="img-footer-3" src="image/f4bank.png" alt="logo labenu">
+        
+      </div>
       </footer>
 
 
     </main>
   </div>
+
 </body>
 
 </html>
